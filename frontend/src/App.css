@@ -5,32 +5,33 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 2rem);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.compass {
+  width: 5em;
+  height: 5em;
+  flex-shrink: 0;
+  display: block;
+  image-rendering: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .compass {
+    transition: none !important;
+    transform: none !important;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo-text {
+  font-family: "Playfair";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6em;
 }
 
 .card {
