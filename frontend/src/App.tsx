@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { API_URL } from './lib/api';
 import './App.css';
 import { RotatingCompass } from './RotatingCompass';
+import { DegreeSelector } from './DegreeSelector';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         />
         <h1 className='logo-text'>BetterCourseMap</h1>
       </header>
+      <DegreeSelector />
     </>
   )
 }

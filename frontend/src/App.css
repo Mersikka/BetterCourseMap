@@ -34,10 +34,44 @@
   font-size: 6em;
 }
 
-.card {
-  padding: 2em;
+.degree-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.read-the-docs {
-  color: #888;
+.degree-selector .rs {
+  width: 100%;
+  min-width: 0;
+}
+
+.select-wrapper {
+  max-width: 100%;
+}
+
+.at-label {
+  color: #FFF;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .degree-selector {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .at-label {
+    text-align: center;
+    margin: -4px 0;
+    /* optional */
+  }
+
+  .degree-selector .rs {
+    width: 100%;
+    min-width: 0;
+  }
 }
